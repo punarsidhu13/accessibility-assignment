@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <table>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th scope="col">Employee Code</th>
+                    <th scope="col">Age</th>
+                    <th scope="col">Department</th>
+                    <th scope="col">Designation</th>
+                    <th scope="col">Salary</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">Punar</th>
+                    <td>1012</td>
+                    <td>21</td>
+                    <td>Python</td>
+                    <td>Developer</td>
+                    <td>40K</td>
+                </tr>
+                <tr>
+                    <th scope="row">Arshdeep</th>
+                    <td>1013</td>
+                    <td>22</td>
+                    <td>FED</td>
+                    <td>Developer</td>
+                    <td>32K</td>
+                </tr>
+                <tr>
+                    <th scope="row">Banipreet</th>
+                    <td>2011</td>
+                    <td>24</td>
+                    <td>Python</td>
+                    <td>Developer</td>
+                    <td>50K</td>
+                </tr>
+                <tr>
+                    <th scope="row">Rohit</th>
+                    <td>2216</td>
+                    <td>30</td>
+                    <td>Python</td>
+                    <td>Technical Project Manager</td>
+                    <td>37K</td>
+                </tr>
+                <tr>
+                    <th scope="row">Tushar</th>
+                    <td>4216</td>
+                    <td>28</td>
+                    <td>FED</td>
+                    <td>Developer</td>
+                    <td>47K</td>
+                </tr>
+
+            </tbody>   
+        </table>
+    </div>
+
+
+    <!-- pop-up dialog box, containing a form -->
+  <dialog id="favDialog">
+    <p> Hello and welcome to the dialog box</p>
+    <p>Accessibility concept is important to be used in the websites</p>
+    <p>So that the user with disabilities and those who want to navigate the website through the keyboard can access it.</p>
+    <p> Contact if you have any doubts:</p>
+    <p id="telephone"  aria-label="teli">+(10)-365-7654</p>
+    <button id="close" aria-label="close">&times;</button>
+  </dialog>
+  
+  <div>
+    <button id="updateDetails">Read More</button>
+  </div>
+
+</body>
+
+<script>
+      const updateButton = document.getElementById("updateDetails");
+      const cancelButton = document.getElementById("close");
+      const dialog = document.getElementById("favDialog");
+      dialog.returnValue = "favAnimal";
+
+      function openCheck(dialog) {
+        if (dialog.open) {
+        console.log("Dialog open");
+        } else {
+          console.log("Dialog closed");
+        }
+      }
+
+    // Update button opens a modal dialog
+    updateButton.addEventListener("click", () => {
+    dialog.showModal();
+    openCheck(dialog);
+    });
+
+    // Form cancel button closes the dialog box
+    cancelButton.addEventListener("click", () => {
+    dialog.close("animalNotChosen");
+    openCheck(dialog);
+  });
+</script>
+</html>

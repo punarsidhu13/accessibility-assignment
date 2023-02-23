@@ -1,0 +1,363 @@
+.navbar{
+    position: fixed;
+    top:0;
+    left:0;
+    background-color: rgb(145, 71, 71);
+    width:100vw;
+    height: 40px;
+    padding:5px;
+    
+}
+
+.navbar a{
+    float:left;
+    text-align:center;
+    font-size: large;
+    font-weight: bold;
+    align-items: center;
+    color:rgb(247, 241, 241);
+    padding: 14px 15px;
+    text-decoration: none;
+    font-size: 20px;
+    margin-left: 67px;
+    
+}
+.navbar  a:hover,a:focus,a:visited{
+    background-color: whitesmoke;
+    color:black;
+    margin-bottom: 2px;
+    font-weight: bold;    
+}
+ input:hover, button:hover, select:hover,
+ input:focus, button:focus, select:focus {
+        font-weight: bold;
+}
+.required:after {
+  content:" *";
+  color: red;
+}
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #b91111;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  input[type=email], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #d02222;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  input[type=date], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #c32424;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+#btn:disabled{
+    border: 1px solid #999999;
+    background-color: #cccccc;
+    color: #666666;
+  }
+#btn, select{
+    width: 20%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  #btn:hover,.btn:focus{
+    font-weight: bold;
+    color:black;
+    background-color: chartreuse;
+  }
+  .popup {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background: rgba(0, 0, 0, 0.58);
+    width: 100%;
+    height: 100%;
+    display: none;
+  }
+  
+  
+  .popup-content {
+    width: 600px;
+    margin: 0 auto;
+    padding: 40px;
+    margin-top: 100px;
+    border-radius: 3px;
+    background: #fff;
+    position: relative;
+  }
+  
+  
+  .closeBtn {
+    position: absolute;
+    top: 5px;
+    right: 12px;
+    font-size: 17px;
+    color: #7c7575;
+    text-decoration: none;
+  }
+  input[type=reset], select {
+    width: 20%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  } 
+  input[type=reset]:hover,button[type=reset]:focus{
+    font-weight: bold;
+    color:black;
+    background-color: chartreuse;
+  }
+  .main-form{
+   position:relative;
+    margin:20px;
+    padding:15px 15px;
+  }
+   
+  input[type=checkbox]{
+    padding: 30px 20px;
+    margin: 15px 0;
+    width:40px;
+    
+  }
+  section {
+    position:fixed;
+    top:50px;
+    left:0;
+    width:98vw;
+    height:500px;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+  .main-footer{
+    position: absolute;
+    left:0;
+    background-color:rgb(148, 74, 74);
+    width:100vw;
+    color: white;
+    height: 40px;
+    padding:5px;
+    text-align:center;
+    font-size: larger;
+    font-weight: bolder;  
+    /* margin-top: 10px;  */
+}
+
+table {
+  position: relative;
+  width: 100%;
+  margin-bottom: 40px;
+
+}
+table:focus, table:hover {
+  outline-style: solid;
+  outline-color: rgb(120, 44, 44);
+}
+
+
+
+td,
+th {
+  padding: 2.25em;
+}
+
+thead th {
+  position: -webkit-sticky; /* for Safari */
+  position: sticky;
+  top: 0;
+  background:#672e2e;
+  color: #FFF;
+  font-size: 20px;
+}
+
+thead th:first-child {
+  left: 0;
+  z-index: 1;
+}
+
+tbody th {
+  position: -webkit-sticky; 
+  position: sticky;
+  left: 0;
+  background: #FFF;
+  border-right: 1px solid #d12d2d;
+  border: solid darkred;
+  font-size: 20px;
+}
+
+tbody td{
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;   
+}
+tbody tr{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+table > tr:hover,
+tbody tr:hover {
+background: rgb(134, 170, 205);
+cursor: pointer;
+}
+
+div #updateDetails
+{
+    display: flex;
+    justify-content: center;
+    width: 60%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    /*margin: 8px 0;*/
+    margin-left : 450px;
+    border:1px solid red ;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+div #updateDetails:hover
+{
+  font-weight: bold;
+  color:black;
+  background-color: chartreuse;
+}
+
+#telephone
+{
+  color: #265301;
+  font-weight: bold;
+}
+
+#telephone:focus-within, #telephone:hover
+{
+  color: #265301;
+  font-weight: bold;
+  outline-style: dotted;
+  outline-color: green;
+  outline-width: 1px;
+  outline-offset: 1px;
+
+
+}
+
+button:focus, button:hover  {
+  outline: 3px solid #d4aa00;
+}
+
+#close{
+background: none;
+color: inherit;
+border: none;
+padding: 0;
+font: inherit;
+cursor: pointer;
+outline: inherit;
+  font-size: 30px;
+  position: absolute;
+  top: 0.5em;
+  right: 0.5rem;
+  margin-top: 0;
+  line-height: 1;
+  width: 20px;
+}
+
+#close:focus  {
+  outline: 3px solid #d4aa00;
+  padding:0 0 0 0;
+}
+
+ul {
+  list-style:none;
+} 
+h1{
+    border: 2px solid red;
+    margin-left: 800px;
+    width: 203px;
+    margin-top: 60px;
+    background-color:rgb(236, 220, 102);
+    border:solid red;  
+    color: rgb(60, 138, 38);
+    border-radius:10px;
+}
+#accordion button:focus{
+  border-radius:0px;
+  outline:none;
+}
+#accordion button{
+    outline: none;
+    background-color:rgb(236, 220, 102);
+    padding: 10px; 
+    margin:10px;  
+    border:solid red;  
+    color: rgb(60, 138, 38);
+    width: 98%;
+    font-size: 20px;
+    font-style: oblique;
+    border-radius:10px;
+}
+#accordion button:hover{
+    cursor: pointer;
+}
+#accordion li{
+   border: 3px solid rgb(5, 80, 21);
+}
+.acc-item-content{
+  padding: 0px 10px;
+}
+.acc-item:last-child {
+  border-bottom: 1px solid DarkSlateGray;
+}
+#accordion button::after{
+  content: "\002B";
+  font-weight: 900;
+  margin-top: 2px;
+  font-size: 15px;
+  float:right;
+}
+
+#accordion{
+  width:100vw;
+  max-width: 1000px;
+  min-width: 500px;
+  margin-left: 400px;
+  margin-top: 120px;
+}
+.acc-item-content{
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+}
+
+#accordion button.active:after{
+    content: "\2212";
+  font-weight: 900;
+  font-size: 20px;
+  float:right;
+}
+.acc-item-content p{
+    font-size: 19px;
+    font-weight: bold;
+}
